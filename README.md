@@ -9,7 +9,6 @@ This project is built using **React** with **Vite**, providing a fast, modern, a
 You can view the live version of the project here:
 
 👉 https://aimotionctrl.netlify.app/
-
 ---
 
 ## ⚙️ Available Official Plugins
