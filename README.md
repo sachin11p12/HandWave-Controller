@@ -1,16 +1,74 @@
-# React + Vite
+# React + Vite Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built using **React** with **Vite**, providing a fast, modern, and optimized development experience with Hot Module Replacement (HMR) and efficient production builds.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+You can view the live version of the project here:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 https://aimotionctrl.netlify.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Available Official Plugins
+
+This setup supports the following official Vite plugins for React:
+
+### 1. @vitejs/plugin-react
+- Uses **Babel** (or **oxc** when used with Rolldown).
+- Enables Fast Refresh.
+- Recommended for standard React + Vite setups.
+
+### 2. @vitejs/plugin-react-swc
+- Uses **SWC** for faster compilation.
+- Provides Fast Refresh with improved development performance.
+
+---
+
+## 🧠 React Compiler
+
+The React Compiler is not enabled in this template due to its impact on development and build performance.
+
+If you would like to enable it, please refer to the official documentation:  
+https://react.dev/learn/react-compiler/installation
+
+---
+
+## 🔍 ESLint Configuration & Best Practices
+
+For production-grade applications, it is strongly recommended to:
+
+- Use **TypeScript** for improved scalability and maintainability.
+- Enable **type-aware linting rules** using `typescript-eslint`.
+- Follow strict ESLint configurations to maintain code quality and consistency.
+
+You can refer to the official Vite TypeScript template for integration guidance:  
+https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
+
+---
+
+## 📦 Tech Stack
+
+- React
+- Vite
+- ESLint
+- Modern JavaScript (ES6+)
+
+---
+
+## 📌 Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
