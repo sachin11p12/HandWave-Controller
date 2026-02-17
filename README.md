@@ -1,73 +1,74 @@
-# React + Vite Project
+# AiMotion
 
-This project is built using **React** with **Vite**, providing a fast, modern, and optimized development experience with Hot Module Replacement (HMR) and efficient production builds.
-
----
-
-## 🚀 Live Demo
-
-You can view the live version of the project here:
-
-👉 https://aimotionctrl.netlify.app/
----
-
-## ⚙️ Available Official Plugins
-
-This setup supports the following official Vite plugins for React:
-
-### 1. @vitejs/plugin-react
-- Uses **Babel** (or **oxc** when used with Rolldown).
-- Enables Fast Refresh.
-- Recommended for standard React + Vite setups.
-
-### 2. @vitejs/plugin-react-swc
-- Uses **SWC** for faster compilation.
-- Provides Fast Refresh with improved development performance.
+AiMotion is a real-time browser-based computer vision application built with React and Vite. It uses MediaPipe to perform face mesh and hand tracking directly in the browser, enabling gesture-based interaction without external hardware or backend processing.
 
 ---
 
-## 🧠 React Compiler
+## 🔗 Live Demo
 
-The React Compiler is not enabled in this template due to its impact on development and build performance.
-
-If you would like to enable it, please refer to the official documentation:  
-https://react.dev/learn/react-compiler/installation
+**Production Deployment:**  
+https://aimotionctrl.netlify.app/
 
 ---
 
-## 🔍 ESLint Configuration & Best Practices
+## 📌 Overview
 
-For production-grade applications, it is strongly recommended to:
+AiMotion leverages modern web technologies and MediaPipe’s machine learning models to:
 
-- Use **TypeScript** for improved scalability and maintainability.
-- Enable **type-aware linting rules** using `typescript-eslint`.
-- Follow strict ESLint configurations to maintain code quality and consistency.
+- Detect and track hand landmarks in real time  
+- Generate detailed face mesh landmarks  
+- Process webcam video directly in the browser  
+- Render detection overlays dynamically  
+- Maintain high performance with Vite and React 19  
 
-You can refer to the official Vite TypeScript template for integration guidance:  
-https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts
-
----
-
-## 📦 Tech Stack
-
-- React
-- Vite
-- ESLint
-- Modern JavaScript (ES6+)
+All processing runs client-side, ensuring low latency and improved privacy.
 
 ---
 
-## 📌 Getting Started
+## 🛠 Tech Stack
+
+### Frontend
+- React 19  
+- React DOM 19  
+- Vite 7  
+
+### Computer Vision
+- @mediapipe/face_mesh  
+- @mediapipe/hands  
+- @mediapipe/camera_utils  
+- @mediapipe/drawing_utils  
+
+### Styling
+- Tailwind CSS v4  
+- PostCSS  
+- Autoprefixer  
+
+### Code Quality & Tooling
+- ESLint 9  
+- @vitejs/plugin-react  
+- eslint-plugin-react-hooks  
+- eslint-plugin-react-refresh  
+
+---
+
+## 🏗 Architecture
+
+The application follows a modular frontend architecture:
+
+
+Core workflow:
+
+1. Webcam stream is initialized using MediaPipe camera utilities.  
+2. Video frames are processed by MediaPipe models.  
+3. Face and hand landmarks are extracted.  
+4. Landmarks are rendered onto canvas overlays.  
+5. React manages UI updates and interaction state.  
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install Dependencies
 
 ```bash
-# Install dependencies
 npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
