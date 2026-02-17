@@ -1,6 +1,6 @@
-# AiMotion
+# HandWave-Controller(Ai-Motion)
 
-AiMotion is a real-time browser-based computer vision application built with React and Vite. It uses MediaPipe to perform face mesh and hand tracking directly in the browser, enabling gesture-based interaction without external hardware or backend processing.
+HandWave-Controller is a real-time browser-based computer vision application built with React and Vite. It uses MediaPipe to perform face mesh and hand tracking directly in the browser, enabling gesture-based interaction without external hardware or backend processing.
 
 ---
 
@@ -13,7 +13,7 @@ https://aimotionctrl.netlify.app/
 
 ## 📌 Overview
 
-AiMotion leverages modern web technologies and MediaPipe’s machine learning models to:
+HandWave-Controller leverages modern web technologies and MediaPipe’s machine learning models to:
 
 - Detect and track hand landmarks in real time  
 - Generate detailed face mesh landmarks  
